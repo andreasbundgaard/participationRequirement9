@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace ReqPar9
 {
-    static class DatabaseController
+    static public class DatabaseController
     {
         static string connString = "Server=ealdb1.eal.local;" + "Database=EJL100_DB;" + "User Id=ejl100_usr;" + "Password=Baz1nga100";
 

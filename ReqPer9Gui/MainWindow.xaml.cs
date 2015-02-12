@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ReqPar9;
 
 namespace ReqPer9Gui
 {
@@ -23,6 +24,11 @@ namespace ReqPer9Gui
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            List<Hop> listeHop = DatabaseController.GetHop();
         }
     }
 }
