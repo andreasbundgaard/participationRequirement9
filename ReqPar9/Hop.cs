@@ -9,5 +9,16 @@ namespace ReqPar9
     class Hop : RawMaterial
     {
         public string Alpha { get; set; }
+
+        public Hop (string name, string quantity, string rawMaterialID, string threshold, string alpha) 
+        {
+            Name = name;
+            Quantity = quantity;
+            RawMaterialID = rawMaterialID;
+            Threshold = threshold;
+            Alpha = alpha;
+
+        }
     }
 }
+        
