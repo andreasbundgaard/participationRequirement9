@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReqPar9
 {
-    class Hop : RawMaterial
+    public class  Hop : RawMaterial
     {
         public string Alpha { get; set; }
 
