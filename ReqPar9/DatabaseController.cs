@@ -8,11 +8,11 @@ using System.Data.SqlClient;
 
 namespace ReqPar9
 {
-    class DatabaseController
+    static class DatabaseController
     {
-        string connString = "Server=ealdb1.eal.local;" + "Database=EJL100_DB;" + "User Id=ejl100_usr;" + "Password=Baz1nga100";
+        static string connString = "Server=ealdb1.eal.local;" + "Database=EJL100_DB;" + "User Id=ejl100_usr;" + "Password=Baz1nga100";
 
-        public List<Yeast> GetYeast()
+        static public List<Yeast> GetYeast()
         {
             List<Yeast> yeasts = new List<Yeast>();
             using (SqlConnection conn = new SqlConnection(connString))
@@ -36,7 +36,7 @@ namespace ReqPar9
                 }
             }
         }
-        public List<Malt> GetMalt()
+       static public List<Malt> GetMalt()
         {
             List<Malt> malts = new List<Malt>();
             using (SqlConnection conn = new SqlConnection(connString))
@@ -60,7 +60,7 @@ namespace ReqPar9
                 }
             }
         }
-        public List<Hop> GetHop()
+        static public List<Hop> GetHop()
         {
             List<Hop> hops = new List<Hop>();
             using (SqlConnection conn = new SqlConnection(connString))
