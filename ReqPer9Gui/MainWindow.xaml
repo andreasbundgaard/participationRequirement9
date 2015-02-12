@@ -4,9 +4,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button Name="done" Content="Gør det!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="411,259,0,0"/>
-        <ComboBox Name="HopDrop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,130,0,0" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBox Width="120"/>
-        </ComboBox>
+        <ComboBox Name="HopDrop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,130,0,0" SelectionChanged="ComboBox_SelectionChanged"/>
         <ComboBox Name="YeastDrop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="176,130,0,0"/>
         <ComboBox Name="MaltDrop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="352,130,0,0"/>
         <TextBox Name="NameNewRes" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="10,63,0,0"/>

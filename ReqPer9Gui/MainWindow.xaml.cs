@@ -24,11 +24,41 @@ namespace ReqPer9Gui
         public MainWindow()
         {
             InitializeComponent();
+            FillHop();
+            FillMalt();
+            FillYeast();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
+        }
+
+        void FillHop()
+        {
             List<Hop> listeHop = DatabaseController.GetHop();
+            foreach (Hop h in listeHop)
+            {
+                HopDrop.Items.Add(h.Name);
+            }
+        }
+
+        void FillMalt()
+        {
+            List<Malt> listeMalt = DatabaseController.GetMalt();
+            foreach (Malt m in listeMalt)
+            {
+                MaltDrop.Items.Add(m.Name);
+            }
+        }
+
+        void FillYeast()
+        {
+            List<Yeast> listeYeast = DatabaseController.GetYeast();
+            foreach (Yeast y in listeYeast)
+            {
+                YeastDrop.Items.Add(y.Name);
+            }
         }
     }
 }

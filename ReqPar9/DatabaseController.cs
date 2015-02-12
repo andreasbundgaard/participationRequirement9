@@ -84,5 +84,30 @@ namespace ReqPar9
                 }
             }
         }
+
+        //static public List<Hop> GetHopName()
+        //{
+        //    List<Hop> hops = new List<Hop>();
+        //    using (SqlConnection conn = new SqlConnection(connString))
+        //    {
+        //        try
+        //        {
+        //            conn.Open();
+        //            SqlCommand cmd = new SqlCommand("jens3737_SP_GetHop", conn);
+        //            cmd.CommandType = CommandType.StoredProcedure;
+        //            SqlDataReader reader = cmd.ExecuteReader();
+        //            while (reader.Read())
+        //            {
+        //                hops.Add(new Hop(reader["Name"].ToString()));
+        //            }
+        //            return hops;
+        //        }
+        //        catch (Exception)
+        //        {
+
+        //            throw;
+        //        }
+        //    }
+        //}
     }
 }
