@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ReqPar9
 {
-    class RawMaterial
+    public class RawMaterial
     {
+        public string Name { get; set; }
+        public string Quantity { get; set; }
+        public string RawMaterialID { get; set; }
+        public string Threshold { get; set; }
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ReqPar9
 {
-    class Yeast
+    public class Yeast : RawMaterial
     {
+        public string Attenuation { get; set; }
     }
 }
