@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReqPar9
 {
-    class DatabaseController
+    class Controller
     {
     }
 }
