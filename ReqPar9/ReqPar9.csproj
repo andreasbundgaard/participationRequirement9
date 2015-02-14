@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseController.cs" />
+    <Compile Include="FacadeController.cs" />
     <Compile Include="Hop.cs" />
     <Compile Include="Malt.cs" />
     <Compile Include="Program.cs" />
