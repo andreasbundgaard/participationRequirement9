@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Controller.cs" />
     <Compile Include="DatabaseController.cs" />
+    <Compile Include="FacadeController.cs" />
     <Compile Include="Hop.cs" />
     <Compile Include="HopRecipe.cs" />
     <Compile Include="Malt.cs" />
