@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace ReqPar9
 {
-    class Controller
+    public class Controller
     {
+        List<HopRecipe> HR;
+
+        public Controller()
+        {
+            HR = new List<HopRecipe>();
+        }
     }
 }

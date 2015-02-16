@@ -19,7 +19,6 @@ namespace ReqPar9
             Threshold = threshold;
             EBC = ebc;
             Mash = mash;
-
         }
     }
 }

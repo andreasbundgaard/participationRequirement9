@@ -1,17 +1,30 @@
 ﻿<Window x:Class="ReqPer9Gui.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="338.312" Width="935.39">
     <Grid>
-        <Button Name="done" Content="Gør det!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="411,259,0,0"/>
-        <ComboBox Name="HopDrop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,130,0,0" SelectionChanged="ComboBox_SelectionChanged"/>
-        <ComboBox Name="YeastDrop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="176,130,0,0"/>
-        <ComboBox Name="MaltDrop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="352,130,0,0"/>
-        <TextBox Name="NameNewRes" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="10,63,0,0"/>
-        <Label Name="ResName" Content="Type name on Recipe" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,32,0,0" Width="156"/>
-        <Label Name="ChoseHop" Content="Choose Hop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,99,0,0" Width="120"/>
-        <Label Content="Choose Yeast" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,99,0,0" Width="120"/>
-        <Label Content="Choose Malt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="352,99,0,0" Width="120"/>
+        <TextBox Name="RecipeName" GotFocus="clearFocus" Text="Recipe Name" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="10,25,0,0"/>
+        <TextBox Name="Efficiency" GotFocus="clearFocus" Text="Efficiency" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="126,25,0,0"/>
+        <TextBox Name="Attnuation" GotFocus="clearFocus" Text="Attnuation" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="245,25,0,0"/>
+        <TextBox Name="FinalGravity" GotFocus="clearFocus" Text="Final Gravity" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="360,25,0,0"/>
+        <TextBox Name="BoilVolume" GotFocus="clearFocus" Text="Boil Volume" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="483,25,0,0"/>
+        <TextBox Name="Contents" GotFocus="clearFocus" Text="Contents" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="604,25,0,0"/>
+        <TextBox Name="Volume" GotFocus="clearFocus" Text="Volume" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="722,25,0,0"/>
 
+        <Label Content="Choose Hop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,104,0,0" Width="120"/>
+        <ListBox Name="HopList" HorizontalAlignment="Left" Margin="10,130,0,61" Width="133" SelectionChanged="HopList_SelectionChanged"/>
+        <TextBox Name="HopQT" GotFocus="clearFocus" HorizontalAlignment="Left" Height="24" Margin="160,104,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox Name="HopBoilTime" GotFocus="clearFocus" Text="Boil time" HorizontalAlignment="Left" Height="24" Margin="160,138,0,0" VerticalAlignment="Top" Width="78"/>
+        <ListBox Name="HopListQT"  HorizontalAlignment="Left" Height="112" Margin="160,173,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button Name="SubmitHopQT" Content="OK" HorizontalAlignment="Left" Margin="256,137,0,0" VerticalAlignment="Top" Width="61" Height="24" Click="SubmitHopQT_click"/>
+
+        <Label Content="Choose Malt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,104,0,0" Width="120" RenderTransformOrigin="3.444,0.345"/>
+        <ListBox Name="MaltList" HorizontalAlignment="Left" Margin="385,135,0,56" Width="133" SelectionChanged="MaltList_SelectionChanged"/>
+        <TextBox Name="MaltQT" GotFocus="clearFocus" HorizontalAlignment="Left" Height="24" Margin="534,138,0,0" VerticalAlignment="Top" Width="78"/>
+        <ListBox Name="MaltListQT"  HorizontalAlignment="Left" Height="112" Margin="534,173,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button Name="SubmitMaltQT" Content="OK" HorizontalAlignment="Left" Margin="627,138,0,0" VerticalAlignment="Top" Width="61" Height="24" Click="SubmitMaltQT_click"/>
+        <Label Content="Choose Yeast" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="731,99,0,0" Width="120" RenderTransformOrigin="3.603,0.145"/>
+        <ListBox Name="YeastList" HorizontalAlignment="Left" Margin="731,130,0,61" Width="133" />
+        <Button Name="Submit" Content="Udfør" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="823,269,0,0" Click="Submit_Click" RenderTransformOrigin="-0.027,1.626"/>
     </Grid>
 </Window>
